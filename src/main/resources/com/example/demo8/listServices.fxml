@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="371.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo8.ListServices">
+   <children>
+      <AnchorPane prefHeight="70.0" prefWidth="605.0" style="-fx-background-color: #4191e1;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="39.0" layoutY="24.0" text="Услуги нашей поликлиники">
+               <font>
+                  <Font name="Trebuchet MS" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="toCabinet" layoutX="373.0" layoutY="11.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="147.0" style="-fx-background-color: #4191e1; -fx-border-color: black;" text="В личный кабинет">
+               <font>
+                  <Font name="Trebuchet MS" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="ourServices" layoutX="40.0" layoutY="100.0" prefHeight="247.0" prefWidth="466.0" style="-fx-border-color: #4191e1;">
+         <columns>
+            <TableColumn fx:id="services" prefWidth="275.19995880126953" style="-fx-border-color: #4191e1; -fx-background-color: #BBD3EA;" text="Услуга " />
+            <TableColumn fx:id="costs" prefWidth="188.79999389648435" style="-fx-border-color: #4191e1; -fx-background-color: #BBD3EA;" text="Цена" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

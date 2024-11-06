@@ -13,5 +13,5 @@ services:
       MYSQL_USER: javafxTest
       MYSQL_PASSWORD: changeme
     volumes:
-      - ${PWD}/mariadb:/var/lib/mysql
-      - ./init.sql:/data/application/db.sql
+      - C:/Users/Admin/IdeaProjects/demo8/db/mariadb:/var/lib/mysql
+      - C:/Users/Admin/IdeaProjects/demo8/db/db.sql:/data/application/db.sql

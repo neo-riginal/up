@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="403.0" prefWidth="1045.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo8.ListDoctors">
+   <children>
+      <AnchorPane prefHeight="70.0" prefWidth="836.0" style="-fx-background-color: #4191e1;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="69.0" layoutY="24.0" text="Врачи нашей поликлиники">
+               <font>
+                  <Font name="Trebuchet MS" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="toCabinet" layoutX="849.0" layoutY="11.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="160.0" style="-fx-background-color: #4191e1; -fx-border-color: black;" text="В личный кабинет">
+               <font>
+                  <Font name="Trebuchet MS" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="709.0" layoutY="300.0" prefHeight="54.0" prefWidth="210.0" style="-fx-background-color: #BBD3EA;" text="Подсказка: Чтобы увидеть список&#10;докторов, выберите специальность.">
+         <font>
+            <Font name="Trebuchet MS" size="12.0" />
+         </font></Label>
+      <VBox layoutX="709.0" layoutY="86.0" prefHeight="187.0" prefWidth="300.0" style="-fx-background-color: #4191e1;">
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="300.0" style="-fx-background-color: #4191e1;" text="Специализации">
+               <font>
+                  <Font name="Trebuchet MS" size="14.0" />
+               </font>
+            </Label>
+            <ListView fx:id="specialities" prefHeight="164.0" prefWidth="300.0" style="-fx-border-color: #4191e1;" />
+         </children>
+      </VBox>
+      <VBox layoutX="20.0" layoutY="86.0" prefHeight="298.0" prefWidth="671.0" style="-fx-background-color: #4191e1;">
+         <children>
+            <Label alignment="CENTER" prefHeight="24.0" prefWidth="675.0" style="-fx-background-color: #4191e1; -fx-border-color: #4191e1;" text="Доктора">
+               <font>
+                  <Font name="Trebuchet MS" size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="doctors" prefHeight="278.0" prefWidth="576.0" style="-fx-border-color: #4191e1;">
+              <columns>
+                <TableColumn fx:id="fio" prefWidth="218.39995765686035" style="-fx-background-color: #BBD3EA; -fx-border-color: #4191e1;" text="ФИО " />
+                  <TableColumn fx:id="birthdate" prefWidth="101.60003662109375" style="-fx-background-color: #BBD3EA; -fx-border-color: #4191e1;" text="Дата рождения" />
+                  <TableColumn fx:id="phone" prefWidth="116.79998779296875" style="-fx-background-color: #BBD3EA; -fx-border-color: #4191e1;" text="Телефон" />
+                  <TableColumn fx:id="address" prefWidth="235.20004272460938" style="-fx-background-color: #BBD3EA; -fx-border-color: #4191e1;" text="Адрес" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
